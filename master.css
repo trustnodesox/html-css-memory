@@ -14,15 +14,15 @@ h1{
 }
 
 .container{
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 10px;
+ margin-left: 14%;
+ margin-right: 14%;
 }
 
 .container:after{
   clear: both;
   content: "";
-  display: cover;
+  display: table;
+  overflow: auto;
 }
 
 
@@ -38,12 +38,17 @@ h1{
   position: relative;
 }
 
+div[class^="row"]{
+  width: 100%;
+}
+
 .row-3{
-  padding-top: 100px;
+
   margin-bottom: 100px;
 }
 
-div[class^="bg":hover]{
+div[class^="bg"]:hover{
+  background-image: url("img/card-1.png");
   background-color: white;
   background-size: contain;
   background-repeat: no-repeat;
@@ -53,5 +58,5 @@ div[class^="bg":hover]{
 
 
 {
-  background-image: url("img/card-1.png");
+
 }
